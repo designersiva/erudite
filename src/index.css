@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-erudite-navy: #080808;
+  --color-erudite-teal: #121212;
+  --color-erudite-orange: #FFA000;
+  --color-erudite-orange-hover: #E69000;
+  --color-erudite-bg-light: #080808;
+  --color-erudite-brand-teal: #315464;
+}
+
+/* Custom scrollbar matching Bold Typography */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #121212;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 160, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-erudite-orange);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-erudite-bg-light);
+  color: #F2F2F2;
+  overflow-x: hidden;
+}
+
+.heading-display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  line-height: 0.85;
+}
+
+.sub-display {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+/* Bold Typography text stroke effect */
+.text-stroke-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+}
+
+.text-stroke-outline-accent {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-erudite-orange);
+}
+
+/* Premium card aesthetics */
+.glass-panel {
+  background: #0C0C0C;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-dark {
+  background: rgba(12, 12, 12, 0.9);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 160, 0, 0.15);
+}
+

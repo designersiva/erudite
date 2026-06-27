@@ -1,0 +1,6 @@
+{
+  "name": "Erudite Agency",
+  "description": "A premium motion graphics, 2D/3D animation, and e-learning design agency website with interactive cost estimators, modular showcases, and elegant transitions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
